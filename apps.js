@@ -1,12 +1,13 @@
 //Shapes
-let rectangle = document.getElementById('.rectangle');
-let square = document.getElementById('sqSide');
-let circle = document.getElementById('.circleRad');
-let rtriangle = document.getElementById('.rtriangle');
 //Rectangle: Inputs for width and height
 //Square: Input for side length
 //Circle: Input for radius
 //Isoceles Right Triangle: Input for height
+let rectangle = document.getElementById('.rectangle');
+let square = document.getElementById('sqSide');
+let circle = document.getElementById('.circleRad');
+let rtriangle = document.getElementById('.rtriangle');
+
 
 //Sidebar Inputs
 let shapeSB = document.getElementById('Shape');
@@ -22,6 +23,7 @@ let sqB = document.getElementById('sqBtn');
 let cirB = document.getElementById('cirBtn');
 let triB = document.getElementById('triBtn');
 
+//Document Container
 let container = document.getElementByClassName('.container');
 
 sqB.addEventListener('click', () => new Square(document.getElementById('squareSideLength').value));
@@ -36,6 +38,9 @@ class Shape {
         this.shape.addEventListener('dblclick', () => container.removeChild(this.shape));
         container.appendChild(this.shape);
     }
+    addShapeToDOM() {
+        container.appendChild(this.shape);
+    }
     describe() {
         shapeName.innerText = `Shape Name: ${this.shape.name}`;
         shapeWidth.innerText = `Width: ${this.shape.width}`;
@@ -47,7 +52,6 @@ class Shape {
 }
 
 class Rectangle extends Shape {
-    //Calculations
     constructor(width, height) {
         super();
         this.width = width;
@@ -70,7 +74,6 @@ class Rectangle extends Shape {
 }
 
 class Circle extends Shape {
-    //Calculations for radius
     constructor(radius) {
         super();
         this.radius = radius;
@@ -94,8 +97,6 @@ class Circle extends Shape {
 }
 
 class Triangle extends Shape {
-    //Calculations Triangle area: 0.5 * base * height
-    //Triangle perimeter): 2 * height + (square root of 2) * height
     constructor(height) {
         super();
         this.height = height;
