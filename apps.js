@@ -24,7 +24,7 @@ let cirB = document.getElementById('cirBtn');
 let triB = document.getElementById('triBtn');
 
 //Document Container
-let container = document.getElementByClassName('.container');
+let container = document.getElementByClassName('container');
 
 sqB.addEventListener('click', () => new Square(document.getElementById('squareSideLength').value));
 rectB.addEventListener('click', () => new Rectangle(document.getElementById('rectangleWidth').value, document.getElementById('rectangleHeight').value));
