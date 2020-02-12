@@ -1,0 +1,63 @@
+/* ---- Styling ----  */
+.container {
+  height: 600px;
+  width: 600px;
+  position: relative;
+  background-color: lightgray;
+  float: left;
+  border: 5px solid black;
+}
+
+.sidePanel {
+  border-radius: 30px;
+  height: 400px;
+  width: 350px;
+  float: right;
+  text-align: center;
+  background-color: goldenrod;
+  border: 5px solid black;
+}
+
+.topPanel {
+  text-justify: left;
+}
+
+body {
+  background-color: palegoldenrod;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* ----  Shapes ----- */
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: absolute;
+}
+
+.rectangle {
+  width: 200px;
+  height: 100px;
+  background: green;
+  position: absolute;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid yellow;
+  border-right: 100px solid transparent;
+  position: absolute;
+}

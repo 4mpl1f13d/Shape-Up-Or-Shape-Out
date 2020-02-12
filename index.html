@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shape Up Or Shape Out</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="topPanel">
+      <h1>Add a Shape</h1>
+      <button id="rectBtn" type="button" class="btn btn-success">Rectangle</button>
+      <input id="rectH" type="number" placeholder="Height ?" />
+      <input id="rectW" type="number" placeholder="Width ?" />
+      <br />
+      <button id="sqBtn" type="button" class="btn btn-warning">Square</button>
+      <input id="sqSide" type="number" placeholder="Length of Side ?" />
+      <br />
+      <button id="cirBtn" type="button" class="btn btn-info">Circle</button>
+      <input id="circleRad" type="number" placeholder="Length of Radius ?" />
+      <br />
+      <button id="triBtn" type="button" class="btn btn-secondary">Triangle</button>
+      <input id="triH" type="number" placeholder="Height ?" />
+      <br />
+      <hr />
+    </div>
+
+    <div class="container"></div>
+
+    <div class="sidePanel">
+      <br />
+      <div>Shape Name</div>
+      <input type="text" id="Shape" placeholder="Shape" readonly />
+      <div>Height</div>
+      <input type="text" id="Height" placeholder="Height" readonly/>
+      <div>Width</div>
+      <input type="number" id="Width" placeholder="Width" readonly/>
+      <div>Area</div>
+      <input type="number" id="Area" placeholder="Area" readonly />
+      <div>Perimeter</div>
+      <input type="number" id="Perimeter"
+      placeholder="Perimeter"readonly/>
+      <div>Radius</div>
+      <input type="number" id="Radius" placeholder="Radius"readonly />
+    </div>
+
+    <script src="apps.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
